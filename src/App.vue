@@ -1,31 +1,54 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <app-header />
+    <div class="container">
+      <div class="nav__container">
+        <side-bar />
+      </div>
+      <main class="data-box">
+        <router-view />
+      </main>
+      <lu-player />
     </div>
-    <router-view />
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import side__bar from "@/components/side-nav.vue";
+import main__header from "@/components/app-header.vue";
+
+export default {
+  name: "app",
+  components: {
+    "side-bar": side__bar,
+    "app-header": main__header,
+  },
+  methods: {},
+};
+</script>
+
+<style lang="scss" scoped>
+* {
+  color: #414364;
+  font-family: "Noto Sans CJK JP";
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  // background: whitesmoke;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+.container {
+  display: grid;
+  flex-wrap: nowrap;
+  padding: 0 3em;
+  grid-template-columns: 200px auto;
+  .nav__container {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .data-box {
+    padding: 0 2.5em;
+    .hero {
+      display: grid;
+      grid-template-columns: 70% 30%;
     }
   }
 }

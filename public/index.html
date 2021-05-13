@@ -7,6 +7,37 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
+  <style>
+    .tns-nav{
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+
+    }
+    .tns-nav button{
+        border: none;
+        background: none;
+        width: 10px;
+        height: 10px;
+        padding: unset;
+        background-color: rgba(0, 0, 0, 0.267);
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+        display: inline-block;
+        margin: 0 5px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+
+    }
+    button.tns-nav-active{
+      background: orange;
+    }
+  </style>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>

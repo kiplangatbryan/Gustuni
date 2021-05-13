@@ -4,21 +4,31 @@
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
-
-### Compiles and minifies for production
+```
 ```
 npm run build
 ```
-
-### Lints and fixes files
 ```
 npm run lint
 ```
+## Todo List 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. implement hover functionality on music cards
+
+ -- add to queue
+ -- add to playlist
+ -- repost (vote for featured)
+2. Take note of featured artist
+
+    -- follow
+    -- added songs 
+    -- followers
+
+## NB
+
+    -- likes for a specific song 
+    -- follow for specifi artist
+
+    to the stream
