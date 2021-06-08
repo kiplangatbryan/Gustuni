@@ -6,8 +6,8 @@ Platform to listen and share explicitly local kenyan content.
 ```
 npm install
 ```
-npm run serve
 ```
+npm run serve
 ```
 
 ## photos
